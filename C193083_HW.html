@@ -1,14 +1,74 @@
 <html></!DOCTYPE html>
 <html>
 <head>
-	<title>MY html project</title>
+	<title>C193083 html project</title>
 </head>
-<body>
-	<h1 style="font-family: courier; text-align: center;">Hello world</h1>
-	<a href="http://www.google.com">google link</a>
-	<img style="height: 300px;width: 400px;float: unset 20px;" src="image/sta-je-html.JPG">
+<style>
 
-	<table style="height: 100px;width: 400px; border-collapse: collapse;" border="3">
+	.table-class
+	{
+		height: 10px;width: 100%; border-collapse: collapse;
+		margin-top: 10px;
+		background-color: orange;
+		font-family: arial black;
+	}
+	.pra-class
+	{
+		text-align: justify;
+		padding: 5px;
+	}
+	.button-class
+	{
+
+		font-size: 20px;
+		height: 40px;
+		width: 250px;
+		background: orange;
+		font-family: arial black;
+		float: upset;
+	}
+	.image-class
+	{
+		height: 300px;
+		width: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+	}
+
+	#content
+	{
+		background: orange;
+		height: 150px;
+		width: 100%;
+	}
+</style>
+
+<body style="background-image: url('image/wallpaperflare.com_wallpaper.JPG');background-size: 100% 100%;">
+	<h1 style="font-family: courier; text-align: center;">HTML Project</h1>
+	
+	<img class="image-class" src="image/sta-je-html.JPG">
+	<div style="text-align: center;">
+			<h2 style="font-family: arial black;">Sign in</h2>
+			<p style="font-family: arial black;">Username <input placeholder="Enter username" type="text" name="username"><br>
+			Password <input placeholder="Enter password" type="password" name="password"><br>
+			Deparment name <select name="departmant">
+				<option disabled selected value="">select department</option>
+				<option>CSE</option>
+				<option>EEE</option>
+				<option>ETE</option>
+				<option>CCE</option>
+				<option>ME</option>
+			</select></p>
+			<button class="button-class" >
+				login
+			</button>
+
+		</div>	
+
+
+	<table class="table-class" cellspacing="50" border="3">
 		<tr>
 		<td>1</td>
 		<td>2</td>
@@ -16,6 +76,7 @@
 		<td>4</td>
 		<td>5</td>
 		<td>6</td>
+		<td rowspan="3">7</td>
 	</tr>
 	<tr>
 		<td>CU</td>
@@ -25,7 +86,29 @@
 		<td>SUST</td>
 		<td>NSTU</td>
 	</tr>
+	<tr>
+		<td>101</td>
+		<td>102</td>
+		<td>103</td>
+		<td>104</td>
+		<td colspan="2">106</td>
+	</tr>
+	<tr>
+		<td>CSE</td>
+		<td>EEE</td>
+		<td>ME</td>
+		<td>ETE</td>
+		<td>CCE</td>
+		<td>IT</td>
+	</tr>
 	</table>
-	<p>My name is <mark>Jahirul</mark> H<sub>2</sub>O</p>
+	<div id="content">
+		<p class="pra-class">
+			<h2>What is html?</h2>
+			<mark>HTMLis the standard markup language for creating Web pages.</mark>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. ... HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+			<a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/">read more</a>
+		</p>
+
+	</div>	
 </body>
 </html>
