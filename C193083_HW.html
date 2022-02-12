@@ -26,6 +26,7 @@
 		background: orange;
 		font-family: arial black;
 		float: upset;
+		margin-top: 60px;
 	}
 	.image-class
 	{
@@ -35,6 +36,16 @@
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 50%;
+	}
+	.login-class
+	{
+		height: 300px;
+		width: 400px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: skyblue;
+		text-align: center;
 	}
 
 	#content
@@ -49,18 +60,18 @@
 	<h1 style="font-family: courier; text-align: center;">HTML Project</h1>
 	
 	<img class="image-class" src="image/sta-je-html.JPG">
-	<div style="text-align: center;">
+	<div class="login-class">
 			<h2 style="font-family: arial black;">Sign in</h2>
-			<p style="font-family: arial black;">Username <input placeholder="Enter username" type="text" name="username"><br>
-			Password <input placeholder="Enter password" type="password" name="password"><br>
-			Deparment name <select name="departmant">
+			<label style="font-family: arial black;">Username :<input placeholder="Enter username" type="text" name="username"><br>
+			Password :<input placeholder="Enter password" type="password" name="password"><br>
+			Deparment name :<select name="departmant">
 				<option disabled selected value="">select department</option>
 				<option>CSE</option>
 				<option>EEE</option>
 				<option>ETE</option>
 				<option>CCE</option>
 				<option>ME</option>
-			</select></p>
+			</select></label> 
 			<button class="button-class" >
 				login
 			</button>
@@ -70,36 +81,65 @@
 
 	<table class="table-class" cellspacing="50" border="3">
 		<tr>
-		<td>1</td>
-		<td>2</td>
-		<td>3</td>
-		<td>4</td>
-		<td>5</td>
-		<td>6</td>
-		<td rowspan="3">7</td>
+		<td style="text-align:center;">Username</td>
+		<td style="text-align:center;">University</td>
+		<td style="text-align:center;">department</td>
+		<td style="text-align:center;">email</td>
+		<td style="text-align:center;">Section</td>
+		<td style="text-align:center;">Year</td>
+		<td >Course</td>
+		
 	</tr>
 	<tr>
-		<td>CU</td>
+		<td>rahim</td>
 		<td>DU</td>
-		<td>RU</td>
-		<td>IIUC</td>
-		<td>SUST</td>
-		<td>NSTU</td>
-	</tr>
-	<tr>
-		<td>101</td>
-		<td>102</td>
-		<td>103</td>
-		<td>104</td>
-		<td colspan="2">106</td>
-	</tr>
-	<tr>
 		<td>CSE</td>
+		<td>rahim@gmail.com</td>
+		<td>A</td>
+		<td>2019</td>
+		<td rowspan="3">web development</td>
+	</tr>
+	<tr>
+		<td>kamrul</td>
+		<td>CU</td>
 		<td>EEE</td>
-		<td>ME</td>
-		<td>ETE</td>
-		<td>CCE</td>
-		<td>IT</td>
+		<td>kamrul@yahoo.com</td>
+		<td>A</td>
+		<td>2020</td>
+		
+	</tr>
+	<tr>
+		<td>Afridi</td>
+		<td>IIUC</td>
+		<td>CSE</td>
+		<td>afridi@yahoo.com</td>
+		<td>B</td>
+		<td>2021</td>
+	</tr>
+	<tr>
+		<td>mainddin</td>
+		<td>IIUC</td>
+		<td>CSE</td>
+		<td>mainddin@yahoo.com</td>
+		<td>B</td>
+		<td>2021</td>
+		<td rowspan="3">Competitive Programming</td>
+	</tr>
+	<tr>
+		<td>fahim</td>
+		<td>IIUC</td>
+		<td>CSE</td>
+		<td>fahim@gmail.com</td>
+		<td>B</td>
+		<td>2021</td>
+	</tr>
+	<tr>
+		<td>sakib</td>
+		<td>IIUC</td>
+		<td>EEE</td>
+		<td>sakib@yahoo.com</td>
+		<td>B</td>
+		<td>2021</td>
 	</tr>
 	</table>
 	<div id="content">
