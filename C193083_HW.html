@@ -75,38 +75,52 @@
 </style>
 
 <body style="background-image: url('image/wallpaperflare.com_wallpaper.JPG');background-size: 100% 100%;">
+	
+
+</div>
+
+	<h1 style="font-family: arial black; text-align: center;">HTML Project</h1>
+	
+	<img class="image-class" src="image/sta-je-html.JPG">
 	<div class="container-fluid">
     <div class="row">
         
         <div  class="col-md-4" style="margin-left: auto ; margin-right: auto;">
             <div class="card">
-                <div class="card-header bg-primary">
-                    <h3>Registration Form</h3>
+                <div class="card-header bg-warning">
+                    <h3 style="font-family: arial black;">Sign up</h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered table-hover table-striped" style="background-color: greenyellow;">
+                    <table class="table table-bordered table-hover table-striped" style="background-color: orange;">
                         <tr>
-                            <td>Username</td>
+                            <td style="font-family: arial black;">Username</td>
                             <td>
                                 <input class="form-control" type="text" name="studentName" id="studentName">
                             </td>
                         </tr>
                         <tr>
-                            <td>Password</td>
+                            <td style="font-family: arial black;">Password</td>
                             <td>
                                 <input class="form-control" type="password" name="fatherName" id="fatherName">
                             </td>
                         </tr>
                         <tr>
-                            <td>Student ID</td>
+                            <td style="font-family: arial black;">Department</td>
                             <td>
-                                <input class="form-control" type="text" name="studentId" id="studentId">
+                                <select class="form-control" name="departmant">
+				                     <option disabled selected value="">select department</option>
+				                     <option>CSE</option>
+				                     <option>EEE</option>
+				                     <option>ETE</option>
+				                     <option>CCE</option>
+				                     <option>ME</option>
+			                    </select>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
-                                <input  class="btn btn-success " value="login" type="submit">
+                                <input  class="btn btn-primary " value="login" type="submit">
                             </td>
                         </tr>
                     </table>
@@ -118,31 +132,10 @@
         
     </div>
 
-</div>
-
-	<h1 style="font-family: arial black; text-align: center;">HTML Project</h1>
-	
-	<img class="image-class" src="image/sta-je-html.JPG">
-	<div class="login-class">
-			<h2 style="font-family: arial black;">Sign in</h2>
-			<label style="font-family: arial black;">Username :<input class="input-class" placeholder="Enter username" type="text" name="username"><br>
-			Password  :<input class="input-class" placeholder="Enter password" type="password" name="password"><br>
-			Deparment :<select class="input-class" name="departmant">
-				<option disabled selected value="">select department</option>
-				<option>CSE</option>
-				<option>EEE</option>
-				<option>ETE</option>
-				<option>CCE</option>
-				<option>ME</option>
-			</select></label> 
-			<button class="button-class" >
-				login
-			</button>
-
 		</div>	
 
 
-	<table class="table-class" cellspacing="50" border="3">
+	<table class="table table-bordered table-striped" style="background-color: orange; font-family: arial black;" cellspacing="50" border="3">
 		<tr>
 		<td style="text-align:center;">Username</td>
 		<td style="text-align:center;">University</td>
