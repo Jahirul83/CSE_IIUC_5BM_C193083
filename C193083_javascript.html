@@ -65,7 +65,7 @@ Enter your name: <input type="text" id="fname" name="txt" value="empty" onchange
    <table>
         <tr>
             <td>Enter First Number</td>
-            <td><input type="number" id="first_number2" name="first_number2" onchange="onchange_myfun(this.value,getElementById('second_number2').value)" ></td>
+            <td><input type="number" id="first_number2" name="first_number2" onchange="onchange_myfun(getElementById('second_number2').value,this.value)" ></td>
         </tr>
         <tr>
             <td>Enter Second Number</td>
@@ -82,7 +82,7 @@ Enter your name: <input type="text" id="fname" name="txt" value="empty" onchange
    <table>
         <tr>
             <td>Enter First Number</td>
-            <td><input type="number" id="first_number3" name="first_number3" onkeyup="onblur_myfun(this.value,getElementById('second_number3'))" ></td>
+            <td><input type="number" id="first_number3" name="first_number3" onkeyup="onblur_myfun(getElementById('second_number3'),this.value)" ></td>
         </tr>
         <tr>
             <td>Enter Second Number</td>
