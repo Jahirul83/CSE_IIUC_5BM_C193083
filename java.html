@@ -1,0 +1,78 @@
+<script>
+        function onclick_myfun()
+        {
+            var first_number = document.getElementById("first_number").value;
+            var second_number = document.getElementById("second_number").value;
+            var add = Number(first_number) + Number(second_number) ;
+            document.getElementById('sum').value = add;
+        }
+        function onchange_myfun( first_number2 = 0 , second_number2 = 0)
+        {
+            //alert("Hello Uesr!");
+            var add2 = Number(first_number2) + Number(second_number2)
+            document.getElementById('sum2').value = add2;
+        }
+        function onblur_myfun(first_number3,second_number3)
+        {
+            //alert("Hello Uesr!");
+            var first_number3 = document.getElementById("first_number3").value;
+            var second_number3 = document.getElementById("second_number3").value;
+            var add3 = Number(first_number3) + Number(second_number3)
+            document.getElementById('sum3').value = add3;
+        }
+    </script>
+<body>
+   
+
+    <table>
+        <tr>
+            <td>Enter First Number</td>
+            <td><input type="number" id="first_number" name="first_number"></td>
+        </tr>
+        <tr>
+            <td>Enter Second Number</td>
+            <td><input type="number" id="second_number" name="second_number"></td>
+        </tr>
+        <tr>
+            <td>Sum of First and Second Number</td>
+            <td><input type="number" id="sum" name="sum"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align ="center"><input type ="submit" name="" id="btn" onclick="onclick_myfun()"></td>
+        </tr>
+    </table>
+
+    <br> <br> 
+
+   <table>
+        <tr>
+            <td>Enter First Number</td>
+            <td><input type="number" id="first_number2" name="first_number2" onchange="onchange_myfun(this.value,getElementById('second_number2').value)" ></td>
+        </tr>
+        <tr>
+            <td>Enter Second Number</td>
+            <td><input type="number" id="second_number2" name="second_number2" onchange="onchange_myfun(getElementById('first_number2').value,this.value)"></td>
+        </tr>
+        <tr>
+            <td>Sum of First and Second Number</td>
+            <td><input type="number" id="sum2" name="sum2"></td>
+        </tr>
+    </table>
+
+    <br> <br> 
+    
+   <table>
+        <tr>
+            <td>Enter First Number</td>
+            <td><input type="number" id="first_number3" name="first_number3" onkeyup="onblur_myfun(this.value,getElementById('second_number3'))" ></td>
+        </tr>
+        <tr>
+            <td>Enter Second Number</td>
+            <td><input type="number" id="second_number3" name="second_number3" onkeyup="onblur_myfun(getElementById('first_number3'),this.value)"></td>
+        </tr>
+        <tr>
+            <td>Sum of First and Second Number</td>
+            <td><input type="number" id="sum3" name="sum3"></td>
+        </tr>
+    </table>
+</body>

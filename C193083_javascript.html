@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(val) 
+{
+  alert("The input value has changed. The new valu is: " + val);
+  var y = document.getElementById("fname");
+  y.value = y.value.toUpperCase();
+}
+function clickfun()
+{
+  document.getElementById("clicked").innerHTML = "submitted successfully";
+}
+  function sumfun(fnumber,Snumber)
+  {
+    var fi_num = document.getElementById("fnumber").value;
+    var se_num = document.getElementById("Snumber").value;
+    var add = Number(fnumber) + Number(Snumber)
+    document.getElementById('sum').value = add;
+  }
+  function sumfun2(fnumber2,Snumber2)
+  {
+    var fi_num2 = document.getElementById("fnumber2").value;
+    var se_num2 = document.getElementById("Snumber2").value;
+    var add2 = Number(fnumber2) + Number(Snumber2)
+    document.getElementById('sum2').value = add2;
+  }
+</script>
+<body>
+Enter your name: <input type="text" id="fname" name="txt" value="empty" onchange="myFunction()">
+<button onclick="clickfun()">submit</button>
+<p id="clicked"></p>
+
+
+
+<table>
+  <tr>
+  <td>Enter first number:</td>
+  <td><input type="number" id="fnumber" name="fnumber"></td>
+</tr>
+<tr>
+  <td>Enter second number:</td>
+  <td><input type="number" id="Snumber" name="Snumber"></td>
+</tr>
+<tr>
+  <td>Sum:</td>
+  <td><input type="number" id="sum" name="sum"></td>
+</tr>
+</table>
+<button onclick="sumfun(getElementById('fnumber').value,getElementById('Snumber').value)">submit</button>
+
+
+
+
+<table>
+  <tr>
+  <td>Enter first number:</td>
+  <td><input type="number" id="fnumber2" name="fnumber2"></td>
+</tr>
+<tr>
+  <td>Enter second number:</td>
+  <td><input type="number" id="Snumber2" name="Snumber2"></td>
+</tr>
+<tr>
+  <td >Sum:</td>
+  <td><input type="number2" id="sum2" name="sum2" onchange="sumfun2(getElementById('fnumber2').value,getElementById('Snumber2').value)"></td>
+</tr>
+</table>
+
+</body>
+</html>
