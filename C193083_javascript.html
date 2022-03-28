@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
 <script>
 function myFunction(val) 
 {
@@ -35,15 +38,30 @@ function clickfun()
             document.getElementById('sum3').value = add3;
         }
 </script>
+<script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
 <body>
+ <div style="padding: 5rem; background-color: orange; color:black;">   
 Enter your name: <input type="text" id="fname" name="txt" value="empty" onchange="myFunction()">
 <button onclick="clickfun()">submit</button>
 <p id="clicked"></p>
 
+<table>
+<tr>
+        <td>Date:</td>
+        <td><input type="text" id="datepicker" placeholder="Enter Date"></td> 
+</tr>
+<br> <br>  
+</table>
 
 
 <table>
+
   <tr>
+
   <td>Enter first number:</td>
   <td><input type="number" id="fnumber" name="fnumber"></td>
 </tr>
@@ -93,6 +111,6 @@ Enter your name: <input type="text" id="fname" name="txt" value="empty" onchange
             <td><input type="number" id="sum3" name="sum3"></td>
         </tr>
     </table>
-
+</div>
 </body>
 </html>
